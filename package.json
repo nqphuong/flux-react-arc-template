@@ -1,0 +1,19 @@
+{
+  "name": "flux-react-arc-template",
+  "version": "0.0.1",
+  "description": "A simple template app in React and Flux",
+  "author": "Nguyen Quoc Phuong",
+  "repository": "https://github.com/nqphuong/flux-react-arc-template",
+  "readme": "https://github.com/nqphuong/flux-react-arc-template/blob/master/README.md",
+  "license": "Apache 2",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-browserify": "^0.5.0",
+    "gulp-concat": "^2.2.0",
+    "react": "^0.12.2",
+    "reactify": "^0.13.1",
+    "es6-promise": "^1.0.0",
+    "flux": "^2.0.1",
+    "object-assign": "^1.0.0"
+  }
+}
