@@ -1,2 +1,2 @@
-# todo-mvc-react
+# flux-react-arc-template
 Not yet.
