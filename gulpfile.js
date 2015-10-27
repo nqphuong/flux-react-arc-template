@@ -14,7 +14,24 @@ gulp.task('copy', function() {
       .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default',['browserify', 'copy']);
+gulp.task('copycss', function(){
+    gulp.src('src/css/**/*.css')
+        .pipe(gulp.dest('dist/css'));
+});
+
+//gulp.task('copyfonts', function(){
+//    gulp.src('src/fonts/**/*.*')
+//        .pipe(gulp.dest('dist/fonts'));
+//});
+//
+//gulp.task('copyimages', function(){
+//    gulp.src('src/images/**/*.*')
+//        .pipe(gulp.dest('dist/css'));
+//});
+
+//gulp.task('default',['browserify', 'copy', 'copycss', 'copyfonts', 'copyimages']);
+
+gulp.task('default',['browserify', 'copy', 'copycss']);
 
 gulp.task('watch', function() {
     gulp.watch('src/**/*.*', ['default']);
