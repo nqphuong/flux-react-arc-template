@@ -7,7 +7,7 @@ Install gulp globally
 ```
 npm install gulp -g
 ```
-Create production web package
+Create web package
 ```
 gulp
 ```
