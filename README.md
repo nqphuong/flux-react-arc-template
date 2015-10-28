@@ -11,3 +11,6 @@ Create web package
 ```
 gulp
 ```
+
+### Demo
+![GitHub Logo](https://github.com/nqphuong/flux-react-arc-template/blob/master/src/images/demo1.png)
