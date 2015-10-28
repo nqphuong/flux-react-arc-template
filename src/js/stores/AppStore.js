@@ -14,6 +14,11 @@ var AppStore = assign({}, EventEmitter.prototype, {
 
 AppDispatcher.register(function(payload){
     console.log(payload);
+    
+    //Get object and call update count
+    var object = payload.action.object;
+    var count = object.state.count;
+    object.countUp(count+1);
     return true;
 });
 

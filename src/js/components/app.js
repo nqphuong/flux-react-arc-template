@@ -4,14 +4,22 @@
 var React = require('react');
 var AppActions = require('../actions/AppActions');
 var AppStore = require('../stores/AppStore');
+
 var AppBox = React.createClass({
     handleClick: function(){
-        AppActions.addItem('hello');
+        AppActions.addItem(this);
+    },
+    getInitialState: function(){
+        return {count:1};
+    },
+    countUp: function(count){
+        this.setState({count:count});
     },
     render: function(){
         return(
             <div>
-                <h3 onClick={this.handleClick}>Click this Title, then check console</h3>
+                <h3 onClick={this.handleClick}>Update count by click!</h3>
+                <h2>{this.state.count}</h2>
             </div>
         );
     }
